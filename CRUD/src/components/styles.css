@@ -1,0 +1,54 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+#heading {
+  text-align: center;
+}
+label {
+  display: block;
+}
+
+input {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#signup {
+  background: linear-gradient(#f2e3b1, #f0ead6, #d3d1c8);
+  padding-bottom: 18%;
+}
+
+#submit {
+  margin-top: 5px;
+}
+
+table {
+  margin: auto;
+  margin-top: 30px;
+  width: 650px;
+}
+
+table,
+tr,
+td,
+th {
+  text-align: center;
+  border: 1px solid;
+  padding: 15px;
+}
+#action {
+  margin: 3px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+#action:hover {
+  background-color: yellow;
+}
