@@ -9,7 +9,7 @@ function LogIn() {
   const [password, setPassword] = useState();
   const navigate = useNavigate();
   const handleSubmit = (event) => {
-    const url = "http://localhost:5000/employees/login";
+    const url = "https://backend-crud-ne5z.onrender.com/employees/login";
     const obj = { name, phone, email, password };
     axios
       .post(url, obj)

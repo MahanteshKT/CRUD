@@ -7,7 +7,7 @@ function ViewTable() {
   const [employees, setEmployees] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/employees")
+      .get("https://backend-crud-ne5z.onrender.com/employees")
       .then(({ data }) => {
         setEmployees(data);
       })

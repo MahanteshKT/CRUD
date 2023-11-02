@@ -13,7 +13,10 @@ function EditPage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/employees/update-employee/" + obj1.id)
+      .get(
+        "https://backend-crud-ne5z.onrender.com/employees/update-employee/" +
+          obj1.id
+      )
       .then((res) => {
         if (res.status === 200) {
           setName(res.data.name);
@@ -30,7 +33,9 @@ function EditPage() {
   }, [obj1.id]);
 
   const handleSubmit = () => {
-    const url = "http://localhost:5000/employees/update-employee/" + obj1.id;
+    const url =
+      "https://backend-crud-ne5z.onrender.com/employees/update-employee/" +
+      obj1.id;
     const newData = { name, phone, email, password };
     axios
       .put(url, newData)

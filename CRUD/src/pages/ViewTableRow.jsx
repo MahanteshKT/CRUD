@@ -3,7 +3,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 function ViewTableRow(props) {
   const DeleteEmployee = () => {
-    const url = "http://localhost:5000/employees/delete-employee/";
+    const url =
+      "https://backend-crud-ne5z.onrender.com/employees/delete-employee/";
     axios
       .delete(url + props.obj._id)
       .then((res) => {
